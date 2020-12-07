@@ -5,7 +5,7 @@
 using namespace std;
 
 void afficherLettresTrouvees(string_view lettres){
-    for(auto lettre: lettres){
+    for(auto lettre : lettres){
 
         cout<<lettre << "";
 
