@@ -13,10 +13,10 @@ int main(){
     auto generateurAleatoire = std::random_device{};
     auto generateur = std::mt19937{generateurAleatoire()};
     auto distribution = std::uniform_int_distribution{0, TAILLE_MOTS_POSSIBLES-1};
-    auto motRecherche = motsPossibles(distribution(generateur));
+    auto test = motsPossibles(distribution(generateur));
 
     //Début pour le nombre
-    auto chaineDebut= string(motRecherche.size,'-');
+    auto chaineDebut= string(test.size,'-');
 
     afficherDebut(chaineDebut);
 
