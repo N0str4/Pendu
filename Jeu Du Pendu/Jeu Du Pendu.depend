@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1607355668 source:c:\users\aymerick.valois\documents\jeu du pendu\jeu du pendu\jeu.cpp
+	"jeu.h"
+	<iostream>
+
+1607351785 c:\users\aymerick.valois\documents\jeu du pendu\jeu du pendu\jeu.h
+
+1607352577 source:c:\users\aymerick.valois\documents\jeu du pendu\jeu du pendu\main.cpp
+	<iostream>
+	<random>
+
+1607357023 source:c:\users\aymerick.valois\desktop\jeu du pendu\jeu.cpp
+	"jeu.h"
+	<iostream>
+
+1607357023 c:\users\aymerick.valois\desktop\jeu du pendu\jeu.h
+
+1607357023 source:c:\users\aymerick.valois\desktop\jeu du pendu\main.cpp
+	<iostream>
+	"motsPossibles.h"
+	<random>
+	"jeu.cpp"
+
+1607357023 c:\users\aymerick.valois\desktop\jeu du pendu\motspossibles.h
+	<array>
+
+1607357023 c:\users\aymerick.valois\desktop\jeu du pendu\jeu.cpp
+	"jeu.h"
+	<iostream>
+
