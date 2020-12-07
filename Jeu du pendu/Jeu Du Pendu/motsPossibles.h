@@ -1,7 +1,7 @@
 #ifndef MOTS_POSSIBLES_H
 #define MOTS_POSSIBLES_H
 
-#include <string_view>
+//#include <string_view>
 #include <array>
 
 const auto motsPossibles = std::array{"TONUS", "LIEGE", "SABLE", "SAUNA", "RHUME", "DIEUX", "TACHE", "BANJO", "SUCRE", "CAPOT", "FRISE", "EMAIL", "LASER", "ECHEC",
