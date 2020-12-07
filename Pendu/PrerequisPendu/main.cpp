@@ -1,13 +1,22 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
+#include <string_view>
 using namespace std;
+
+
+
+void afficher(string& chaine){
+
+    cout << chaine<<endl;
+
+}
+
 
 int main()
 {
     SetConsoleOutputCP(65001);
-    auto chaine= string("bonjouuur"), chaine2= string("Cà va ?");
-    auto chaine3 = chaine + chaine2;
-    cout << chaine3 << endl;
+    auto chaine2("Bijour"s);
+    afficher("Bijour");
     return 0;
 }
