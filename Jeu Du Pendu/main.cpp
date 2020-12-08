@@ -34,13 +34,6 @@ int main(){
 
 
     lettreFindBool = verifierLettre(mot,returnlettre,lettreFindBool);
-    cout<<lettreFindBool;
-    if (lettreFindBool==true){
-
-         // afficherLettresTrouvees(returnlettre);
-
-    }else {
-
-        cout<<"Mauvaise lettres"<<endl;
-    }
+    auto totalChain = remplaceMot(chaineDebut, returnlettre,mot);
+    cout<<totalChain<<endl;
 }
