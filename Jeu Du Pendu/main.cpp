@@ -36,4 +36,7 @@ int main(){
     lettreFindBool = verifierLettre(mot,returnlettre,lettreFindBool);
     auto totalChain = remplaceMot(chaineDebut, returnlettre,mot);
     cout<<totalChain<<endl;
+    returnlettre = demanderLettre(mot);
+    totalChain = remplaceMot(totalChain, returnlettre,mot);
+    cout<<totalChain<<endl;
 }

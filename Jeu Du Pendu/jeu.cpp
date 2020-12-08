@@ -47,6 +47,7 @@ auto remplaceMot(auto chaineDebut, char lettre, auto mot){
         chaineDebut[6]= lettre;
 
     }
+
     return chaineDebut;
 
 
@@ -98,4 +99,165 @@ bool verifierLettre(auto mot, char lettre, bool LettreTrouve){
     return LettreTrouve;
 
 
+}
+void afficherPendu(auto nbErreur){
+    cout << endl;
+switch (nbErreur){
+case 11 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |   /|\
+                                                    |   / \
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 10 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |   /|\
+                                                    |   /
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 9 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |   /|\
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 8 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |   /|
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 7 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |    |
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 6 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |    o
+                                                    |
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 5 :
+    cout << R"(
+                                                    ______
+                                                    |/   |
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 4 :
+    cout << R"(
+                                                    ______
+                                                    |/
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 3 :
+    cout << R"(
+                                                    ______
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 2 :
+    cout << R"(
+
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                                                  __|__
+
+               )" << endl;
+    break;
+case 1 :
+    cout << R"(
+
+
+
+
+
+
+                                                  __ __
+
+               )" << endl;
+    break;
+default :
+     cout << R"(
+
+
+
+
+
+
+
+
+               )" << endl;
+    break;
+}}
+
+void majuscule(auto lettreentree){
+    char final;
+if (lettreentree >= 97){
+int trans = static_cast<int>(lettreentree);
+trans = trans - 32;
+final = static_cast<char>(trans);
+}
+else {
+    final = lettreentree;
+}
+cout << final;
 }
