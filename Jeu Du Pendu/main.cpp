@@ -5,6 +5,7 @@
 #include <array>
 #include "jeu.cpp"
 #include <string_view>
+#include <string.h>
 
 using namespace std;
 
@@ -13,13 +14,33 @@ int main(){
     auto generateurAleatoire = std::random_device{};
     auto generateur = std::mt19937{generateurAleatoire()};
     auto distribution = std::uniform_int_distribution{0, TAILLE_MOTS_POSSIBLES-1};
-    auto test = motsPossibles(distribution(generateur));
+    auto mot = motsPossibles[distribution(generateur)];
+    auto chaineDebut= string(strlen(mot),'-');
 
-    //Début pour le nombre
-    auto chaineDebut= string(test.size,'-');
+    // ------------------- //
+    //      START PENDU
+    // ------------------- //
 
-    afficherDebut(chaineDebut);
+    cout<<"Bienvenue au jeu du Pendu !"<<endl;
+    cout<<chaineDebut<<endl;
+
+    // ------------------- //
+    cout<<mot<<endl;
+    cout<<mot[1]<<endl;
+    auto returnlettre = demanderLettre(mot);
+    bool lettreFindBool =false;
+    cout<<returnlettre<<endl;
 
 
-    return 0;
+
+    lettreFindBool = verifierLettre(mot,returnlettre,lettreFindBool);
+    cout<<lettreFindBool;
+    if (lettreFindBool==true){
+
+         // afficherLettresTrouvees(returnlettre);
+
+    }else {
+
+        cout<<"Mauvaise lettres"<<endl;
+    }
 }
